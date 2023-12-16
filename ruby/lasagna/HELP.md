@@ -9,6 +9,7 @@ terminal window and run the following command to install minitest:
 gem install minitest
 ```
 
+
 Run the tests from the exercise directory using the following command:
 
 ```
@@ -27,7 +28,7 @@ ruby -r minitest/pride <snake-case-exercise>_test.rb
 
 ## Submitting your solution
 
-You can submit your solution using the `exercism submit hello_world.rb` command.
+You can submit your solution using the `exercism submit lasagna.rb` command.
 This command will upload your solution to the Exercism website and print the solution page's URL.
 
 It's possible to submit an incomplete solution which allows you to:
