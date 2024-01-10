@@ -6,13 +6,9 @@ https://en.wikipedia.org/wiki/Guido_van_Rossum
 This is a module docstring, used to describe the functionality
 of a module and its functions and/or classes.
 """
-
-
-#TODO: define the 'EXPECTED_BAKE_TIME' constant.
 EXPECTED_BAKE_TIME = 40
-PREP_TIME_PER_LAYER = 2
+PREPARATION_TIME = 2
 
-#TODO: Remove 'pass' and complete the 'bake_time_remaining()' function below.
 def bake_time_remaining(minutes_cooked):
     """Calculate the bake time remaining.
 
@@ -26,22 +22,16 @@ def bake_time_remaining(minutes_cooked):
 
     return EXPECTED_BAKE_TIME - minutes_cooked
 
-
-#TODO: Define the 'preparation_time_in_minutes()' function below.
-# You might also consider using 'PREPARATION_TIME' here, if you have it defined.
 def preparation_time_in_minutes(number_of_layers):
     """Calculate the prep time based on layers.
 
     :param number_of_layers: int - how many layers of pasta.
-    :return: int - prep time (in minutes) derived from 'PREP_TIME_PER_LAYER".
+    :return: int - prep time (in minutes) derived from 'PREPARATION_TIME".
 
-    Function that takes the number of layers and works out how lon it will take to prepare using the  `PREP_TIME_PER_LAYER`.
+    Function that takes the number of layers and works out how lon it will take to prepare using the  `PREPARATION_TIME`.
     """
-    return number_of_layers * PREP_TIME_PER_LAYER
+    return number_of_layers * PREPARATION_TIME
 
-
-#TODO: define the 'elapsed_time_in_minutes()' function below.
-# Remember to add a docstring (you can copy and then alter the one from bake_time_remaining.)
 def elapsed_time_in_minutes(number_of_layers, elapsed_bake_time):
     """Calculate the elapsed time.
 
